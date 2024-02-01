@@ -24,5 +24,5 @@ FROM quay.io/keycloak/keycloak:${KEYCLOAK_VERSION}
 
 COPY --from=keycloak-builder /opt/keycloak/ /opt/keycloak/
 ENV KC_DB=postgres
-ENV USE_FAKE_GMVET_CONNECTOR=true
+ENV USE_FAKE_LEGACY_CONNECTOR=true
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--http-enabled=true", "--hostname-strict-https=false"]
