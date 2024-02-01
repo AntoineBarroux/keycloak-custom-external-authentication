@@ -24,7 +24,7 @@ public class CustomUserFormAuthenticatorFactory implements AuthenticatorFactory 
 
     @Override
     public String getHelpText() {
-        return "Custom authenticator to handle custom tempalte fields";
+        return "Custom authenticator to handle custom template fields";
     }
 
     @Override
