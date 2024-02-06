@@ -13,7 +13,7 @@ services:
       KEYCLOAK_ADMIN: "admin"
       KEYCLOAK_ADMIN_PASSWORD: "admin"
   kc-db:
-    image: postgres:12.1-alpine
+    image: postgres:16.1-alpine
     environment:
       POSTGRES_USER: "db-user"
       POSTGRES_PASSWORD: "db-password"
